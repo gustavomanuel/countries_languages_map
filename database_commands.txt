@@ -1,0 +1,15 @@
+CREATE TABLE country_list (
+    country_name VARCHAR(255) NOT NULL,
+    official_languages VARCHAR(255),
+    regional_languages VARCHAR(255),
+    minority_languages VARCHAR(255),
+    national_languages VARCHAR(255),
+    widely_spoken_languages VARCHAR(255),
+    PRIMARY KEY (country_name)
+);
+
+LOAD DATA INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\countrylist.csv'
+INTO TABLE country_list FIELDS TERMINATED BY ',';
+
+
+mysql --local-infile=1 -u root -p]:N<>7QyB+2G+*A2+P
