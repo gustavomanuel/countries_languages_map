@@ -8,7 +8,7 @@ export default function App() {
 
   const handleClick = () => {
     if (name == 'Gustavo'){
-      setName('Manuel1')
+      setName('Manuel')
     }
     else{
       setName('Gustavo')
